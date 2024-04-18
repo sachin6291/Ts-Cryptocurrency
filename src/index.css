@@ -1,0 +1,75 @@
+:root{
+    --white: #FFF;
+    --frosted: rgba(255,255,255,.25);
+    --blur: blur(5px);
+    --frosted-alert: rgba(255,15,15,.45);
+    --primary: rgb(97, 236, 188);
+    --black: #182339;
+    --primary-frosted: rgba(97, 236, 188,.75);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url('/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    font-size: 2rem;
+}
+.container {
+    max-width: 60rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.app-title{
+    font-size: 3.8rem;
+    margin-top: 5rem;
+    color: var(--white);
+}
+.app-title span{
+    color: var(--primary);
+}
+.content{
+    margin-top: 5rem;
+    padding: 6rem 2rem;
+    background-color: var(--frosted);
+    backdrop-filter: var(--blur);
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.form, .field{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.form label{
+    color: var(--white);
+}
+.form select{
+    background-color: var(--frosted);
+    backdrop-filter: var(--blur);
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+.form [type="submit"]{
+    padding: 1rem;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    background-color: var(--primary-frosted);
+    backdrop-filter: var(--blur);
+    color: var(--black);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    transition: background-color 300ms ease;
+}
+.form [type="submit"]:hover{
+    background-color: var(--primary);
+}
