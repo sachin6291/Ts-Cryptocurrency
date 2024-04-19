@@ -73,3 +73,12 @@ body{
 .form [type="submit"]:hover{
     background-color: var(--primary);
 }
+.error{
+    background-color: var(--frosted-alert);
+    backdrop-filter: var(--blur);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+}

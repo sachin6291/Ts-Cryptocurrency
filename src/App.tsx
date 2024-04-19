@@ -6,7 +6,7 @@ function App() {
 
   const {fetchCryptos} =useCryptoStore()
 
-  useEffect(()=>{},[])
+  useEffect(()=>{fetchCryptos()},[])
 
   return (
     <>
