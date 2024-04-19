@@ -12,7 +12,7 @@ const Form = () => {
 
     const [selected, setSelected]=useState<SelectedCurrency>({
         currency:"",
-        cryptocurrency:""
+        cryptocurrency:"", 
     })
 
     const [error, setError]= useState('')
@@ -20,7 +20,7 @@ const Form = () => {
     const handleChange=(e: ChangeEvent<HTMLSelectElement>)=>{
         setSelected({
             ...selected, 
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
         })
         
     }

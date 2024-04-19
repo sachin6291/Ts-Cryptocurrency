@@ -82,3 +82,29 @@ body{
     margin-top: -2rem;
     margin-bottom: -1rem;
 }
+.wrapper{
+    margin-top: 5rem;
+}
+.wrapper h2{
+    text-align: center;
+}
+.result{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1rem;
+}
+.result img{
+    width: 100%;
+    background-color: rgba(255,255,255,.70);
+    border-radius: 1rem;
+}
+.result p{
+    color: var(--white);
+    margin: 0 0 1rem 2rem;
+    font-size: 2rem;
+}
+.result span{
+    font-weight: 700;
+    color: var(--primary);
+}
